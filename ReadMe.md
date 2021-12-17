@@ -3,7 +3,24 @@
 
 ## Analaysis of Predictability
 
+Analysis is based on the predictability of the __drivers' pay__. The __drivers' pay__ is defined as the sume of 
+__tip amount__ and the __fair amount__. Involvement of the __tip amount__ involves a randomness to the data. This calls
+for an analysis of predictability of the __drivers' pay__.
 
+- First the __drivers' pay__ is calculated and normalized for unit __trip distance__ and for unit __trip time__.
+
+- A model of linear regression to predict the __drivers' pay__ based on the __trip distance__ and __trip time__ is fitted. 
+
+- Then the accuracy of the prediction is measured using the *metrics*, *mean squared error(mse)* and *r2 score*.
+
+- As evidenced by the *jupyter notebook*, *Taxi_fair_variation.ipynb* the predictability during some hours (e.g. 13th hour) significantly less.
+
+- This leads to increased __driver stress__. 
+
+- Another observation in *jupyter notebook*, *Alternate.ipynb* is that in some particular pickup locations this abnormal
+unpredictability is not present (e.g. Newark airport).
+
+- The solution to reduce the stress level of driver is to recommend pickup location with high predictability.  
 
 ## Solution
 
